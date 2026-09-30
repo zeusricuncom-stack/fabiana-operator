@@ -1,25 +1,41 @@
-# Workflow v0.1
+# FabIAna Operator Workflow
 
 ## Phase 0 — Project Intake
-Ingest all available business, brand, content, asset, technical and reference material. Normalize into PROJECT_CONTEXT. Detect NEW_BUILD vs REDESIGN and define SUCCESS_CRITERIA.
+Normalize client context, brand, assets, goals, constraints, references and success criteria.
+
+Before visual work, establish the minimum design brief:
+- DESIGN_TARGET
+- USER_OUTCOME
+
+If either is materially unclear, resolve it before ideation or implementation. Once clear, produce a concise BRIEF_PLAYBACK and continue.
 
 ## Phase 1 — Web Intelligence
-Generate internal machine-to-machine research tasks for Atenea and MarIAno. Research must be web-decision oriented, not a generic market report. Output must connect finding -> evidence -> web implication -> recommended decision -> confidence.
+Generate internal machine-to-machine research prompts for Atenea and MarIAno. Research must be decision-oriented, not a generic market report.
+
+Output pattern:
+HALLAZGO -> EVIDENCIA -> IMPLICACIÓN WEB -> DECISIÓN RECOMENDADA -> CONFIANZA
 
 ## Phase 2 — Website Blueprint
-FabIAna converts context and evidence into architecture, page map, section/block plan, Design Fingerprint, interaction/motion notes and Asset Map.
+Produce information architecture, page/section/block structure, conversion path, Design Fingerprint and Asset Map.
+
+When no approved visual target exists, generate three meaningfully distinct visual directions grounded in the same brief and constraints. Resolve one selected or consolidated VISUAL_TARGET before production.
 
 ## Gate 1 — Human approval
-No WordPress production work before explicit approval of the blueprint. User may approve, reject or request revisions.
+No production until the blueprint, asset plan and visual target are approved/resolved.
 
 ## Phase 3 — Production
-Prepare assets, upload media, construct WordPress/Divi/WooCommerce implementation and keep work in draft/staging by default.
+Prepare assets and build in WordPress/Divi/WooCommerce as required. Default to draft/staging. Production publishing remains blocked.
 
 ## Phase 4 — Visual + Technical QA Loop
-RENDER -> OBSERVE -> COMPARE -> DETECT -> CORRECT -> RENDER. Validate desktop/tablet/mobile plus functional and technical behavior.
+Visual loop:
+RENDER -> CAPTURE -> NORMALIZE -> COMPARE -> CLASSIFY -> CORRECT -> RENDER
+
+Visual QA compares SOURCE_VISUAL_TRUTH against the rendered implementation at matching viewport/state and uses P0-P3 severity. Any actionable P0/P1/P2 keeps the result blocked until fixed and re-verified.
+
+Technical QA validates links, forms, responsive behavior, dynamic Woo data, cart/checkout where relevant, visible runtime failures and implementation integrity.
 
 ## Gate 2 — Final human approval
 Present preview, QA state, changes, known issues and pending items. Publication remains blocked until explicit authorization.
 
 ## Publish
-Publish only the approved target and verify post-action state.
+Only after Gate 2. Verify the post-action state.
